@@ -17,7 +17,7 @@ const app = new Vue(
                     .finally( () => {
                         console.log(thisEmail);
                         thisArray.push(thisEmail);
-                        // this.emailArray = thisArray // display updated every time each email are generated
+                        // this.emailArray = thisArray // display updated every time each email is generated
                         if (i === this.emailsNumber) {
                             this.emailArray = thisArray; // display updated only when emailArray.length = 10
                         }
