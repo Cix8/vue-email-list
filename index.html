@@ -16,7 +16,12 @@
     
     <!-- VUE-APP -->
     <div id="root">
-        
+        <button @click="emailGenerator">Genera una lista di 10 email casuali!</button>
+        <ul>
+            <li v-for="email in emailArray">
+                {{email}}
+            </li>
+        </ul>
     </div>
     <!-- /VUE-APP -->
 
