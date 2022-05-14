@@ -12,12 +12,12 @@ const app = new Vue(
                     let thisEmail = '';
                     axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
                     .then( (resp) => {
-                        thisEmail = (resp.data.response);
+                        thisEmail = resp.data.response;
                     })
                     .finally( () => {
                         console.log(thisEmail);
                         thisArray.push(thisEmail);
-                        // this.emailArray = thisArray // display updated every time each email is generated
+                        // this.emailArray = thisArray  // display updated every time each email is generated
                         if (i === this.emailsNumber) {
                             this.emailArray = thisArray; // display updated only when emailArray.length = 10
                         }
