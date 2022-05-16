@@ -16,8 +16,7 @@
     
     <!-- VUE-APP -->
     <div id="root">
-        <button @click="emailGenerator">Genera una lista di 10 email casuali!</button>
-        <ul v-if="emailArray.length !== 0">
+        <ul v-if="emailArray.length >= emailsNumber">
             <li v-for="email in emailArray">
                 {{email}}
             </li>
